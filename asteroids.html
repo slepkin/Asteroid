@@ -1,0 +1,27 @@
+<html>
+<head>
+  <style media="screen" type="text/css">
+
+  @font-face {
+      font-family: 'PressStart2P';
+      src: url('PressStart2P.ttf');
+  }
+
+  </style>
+</head>
+<body>
+  <canvas width="800" height="600" id="canvas"></canvas>
+  <audio id="shoot_sound" src="asteroids_shoot.wav" style="display; none"></audio>
+  <audio id="saucer_sound" src="asteroids_saucer.wav" style="display; none"></audio>
+  <audio id="explosion_sound" src="explosion.wav" style="display; none"></audio>
+  <audio id="win_sound" src="electrical_sweep.wav" style="display; none"></audio>
+  <audio id="lose_sound" src="no_mercy.wav" style="display; none"></audio>
+  <!-- // <script type="application/javascript" src="./keymaster.min.js"></script> -->
+  <script type="application/javascript" src="./mousetrap.min.js"></script>
+  <script type="application/javascript" src="./moving_object.js"></script>
+  <script type="application/javascript" src="./bullet.js"></script>
+  <script type="application/javascript" src="./asteroid.js"></script>
+  <script type="application/javascript" src="./ship.js"></script>
+  <script type="application/javascript" src="./game.js"></script>
+</body>
+</html>
