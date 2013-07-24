@@ -18,7 +18,7 @@ function Game() {
 
   //Create asteroids
   this.asteroids = [];
-  for(var i = 0; i < 1; i++) {    this.asteroids.push(Asteroid.prototype.randomAsteroid(this.dims));
+  for(var i = 0; i < 15; i++) {    this.asteroids.push(Asteroid.prototype.randomAsteroid(this.dims));
   }
 
   //Create ship
@@ -61,7 +61,7 @@ Game.prototype.draw = function() {
   c.fillStyle = "white";
   c.font = "8pt PressStart2P";
   var bullet_str = ("00"+this.available_bullets).slice(-3);
-  c.fillText("Bullets: " + (this.available_bullets === -1 ? 999 : bullet_str), 665, 20);
+  c.fillText("Bullets: " + (this.available_bullets === -1 ? 999 : bullet_str), 650, 20);
 
   // Display mute status if muted
   if(this.mute)
